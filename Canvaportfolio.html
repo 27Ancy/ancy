@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ancy Sneha | Websites • Dashboards • Digital Design</title>
+
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --card: #121826;
+      --accent: #5eead4;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --border: #1f2937;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Inter, system-ui, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(180deg, #0b0f14, #020617);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 90px 20px;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.2;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+
+    .section-subtitle {
+      color: var(--muted);
+      max-width: 700px;
+      margin-bottom: 40px;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding-top: 120px;
+    }
+
+    .hero h1 {
+      font-size: 3.2rem;
+      font-weight: 800;
+    }
+
+    .hero span {
+      color: var(--accent);
+    }
+
+    .hero p {
+      margin-top: 22px;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 36px;
+      padding: 14px 30px;
+      background: var(--accent);
+      color: #020617;
+      border-radius: 10px;
+      font-weight: 600;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(94,234,212,0.25);
+    }
+
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 28px;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      transition: transform 0.25s ease, border 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: var(--accent);
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      font-size: 1.15rem;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    /* CONTACT */
+    .contact-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      max-width: 520px;
+    }
+
+    .contact-box p {
+      margin-bottom: 16px;
+      font-size: 1rem;
+      color: var(--muted);
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2.3rem;
+      }
+
+      section {
+        padding: 70px 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Hi, I’m <span id="typewriter"></span></h1>
+    <p>
+      I design modern websites, automate business reports, and create clean dashboards & digital content.
+    </p>
+    <a class="btn" href="pricing.html">View Pricing</a>
+  </section>
+
+  <!-- SERVICES -->
+  <section>
+    <h2>Services</h2>
+    <p class="section-subtitle">
+      End-to-end digital solutions built for speed, clarity, and business impact.
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>🌐 Website Design</h3>
+        <p>Landing pages, business websites, portfolios, booking systems, and lightweight e-commerce.</p>
+      </div>
+
+      <div class="card">
+        <h3>📊 Dashboards & Reports</h3>
+        <p>Excel dashboards, automated MIS reports, Power BI visuals, and data cleanup.</p>
+      </div>
+
+      <div class="card">
+        <h3>🧠 SQL & Analytics</h3>
+        <p>SQL queries, structured datasets, PDF insights, and business decision analytics.</p>
+      </div>
+
+      <div class="card">
+        <h3>🎨 Digital Design</h3>
+        <p>PowerPoint decks, pitch presentations, banners, and social media creatives.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SAMPLE WORK -->
+  <section>
+    <h2>Sample Work</h2>
+    <p class="section-subtitle">
+      A few examples of real projects and demos.
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Website Demo</h3>
+        <p>
+          <a href="https://ics-security-consulting.github.io/portfolio/" target="_blank">
+            View Live Project →
+          </a>
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Dashboard Samples</h3>
+        <p>Excel & Power BI dashboards available on request.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <h2>Contact</h2>
+    <p class="section-subtitle">
+      Reach out directly to discuss pricing or project details.
+    </p>
+
+    <div class="contact-box">
+      <p>📧 <a href="mailto:ancysnehacibi@gmail.com">ancysnehacibi@gmail.com</a></p>
+      <p>📞 <a href="tel:+919994608350">+91 99946 08350</a></p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Ancy Sneha • Websites • Dashboards • Digital Design
+  </footer>
+
+  <!-- TYPEWRITER EFFECT -->
+  <script>
+    const text = "Ancy Sneha";
+    let index = 0;
+    const speed = 120;
+    const element = document.getElementById("typewriter");
+
+    function typeEffect() {
+      if (index < text.length) {
+        element.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, speed);
+      }
+    }
+    typeEffect();
+  </script>
+
+</body>
+</html>

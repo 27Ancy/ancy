@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing | Ancy Sneha</title>
+
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --card: #121826;
+      --accent: #5eead4;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --border: #1f2937;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Inter, system-ui, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(180deg, #0b0f14, #020617);
+      color: var(--text);
+    }
+
+    section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 80px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      font-weight: 800;
+    }
+
+    h1 span {
+      color: var(--accent);
+    }
+
+    p.subtitle {
+      text-align: center;
+      margin-top: 15px;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    /* PRICING GRID */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 28px;
+      margin-top: 60px;
+    }
+
+    .pricing-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 32px;
+      position: relative;
+      transition: transform 0.3s ease, border 0.3s ease;
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--accent);
+    }
+
+    .badge {
+      position: absolute;
+      top: -12px;
+      right: 20px;
+      background: var(--accent);
+      color: #020617;
+      padding: 6px 14px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      border-radius: 999px;
+    }
+
+    .plan {
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+
+    .price {
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin: 16px 0;
+      color: var(--accent);
+    }
+
+    .price span {
+      font-size: 0.9rem;
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 20px;
+    }
+
+    ul li {
+      margin-bottom: 12px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    ul li::before {
+      content: "✓ ";
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .btn {
+      display: block;
+      margin-top: 28px;
+      text-align: center;
+      padding: 14px;
+      background: var(--accent);
+      color: #020617;
+      border-radius: 10px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    /* ADDONS */
+    .addons {
+      margin-top: 80px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 30px;
+    }
+
+    th, td {
+      border: 1px solid var(--border);
+      padding: 16px;
+      text-align: left;
+    }
+
+    th {
+      background: #020617;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<section>
+  <h1>Simple & Transparent <span>Pricing</span></h1>
+  <p class="subtitle">
+    No hidden costs. Clean design. Built to convert.
+  </p>
+
+  <!-- WEBSITE PRICING -->
+  <div class="pricing-grid">
+
+    <div class="pricing-card">
+      <div class="plan">Starter Static</div>
+      <div class="price">₹1,500 <span>/ one-time</span></div>
+      <ul>
+        <li>1-page website</li>
+        <li>Mobile-friendly design</li>
+        <li>Contact details section</li>
+        <li>Fast delivery</li>
+      </ul>
+      <a class="btn" href="#">Get Started</a>
+    </div>
+
+    <div class="pricing-card">
+      <div class="plan">Standard Static</div>
+      <div class="price">₹3,500 <span>/ one-time</span></div>
+      <ul>
+        <li>3 pages</li>
+        <li>WhatsApp & Call buttons</li>
+        <li>Modern UI</li>
+        <li>Basic SEO structure</li>
+      </ul>
+      <a class="btn" href="#">Get Started</a>
+    </div>
+
+    <div class="pricing-card">
+      <div class="badge">POPULAR</div>
+      <div class="plan">Business Pro</div>
+      <div class="price">₹9,500 <span>/ one-time</span></div>
+      <ul>
+        <li>7–8 dynamic pages</li>
+        <li>Contact & enquiry forms</li>
+        <li>SEO + analytics</li>
+        <li>WhatsApp, Map integration</li>
+      </ul>
+      <a class="btn" href="#">Get Started</a>
+    </div>
+
+    <div class="pricing-card">
+      <div class="plan">E-commerce Starter</div>
+      <div class="price">₹18,500 <span>/ one-time</span></div>
+      <ul>
+        <li>Up to 20 products</li>
+        <li>Cart & payment setup</li>
+        <li>Admin panel</li>
+        <li>Basic product SEO</li>
+      </ul>
+      <a class="btn" href="#">Get Started</a>
+    </div>
+
+  </div>
+
+  <!-- ADD ONS -->
+  <div class="addons">
+    <h2>Add-On Services</h2>
+
+    <table>
+      <tr>
+        <th>Service</th>
+        <th>Price (₹)</th>
+      </tr>
+      <tr>
+        <td>Domain + Hosting Setup</td>
+        <td>1,000 – 2,000</td>
+      </tr>
+      <tr>
+        <td>Google Business Profile Setup</td>
+        <td>1,500</td>
+      </tr>
+      <tr>
+        <td>Monthly Maintenance</td>
+        <td>999 / month</td>
+      </tr>
+      <tr>
+        <td>Extra Page</td>
+        <td>500 / page</td>
+      </tr>
+      <tr>
+        <td>Content Writing</td>
+        <td>1,000 / page</td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<footer>
+  © 2026 Ancy Sneha • Website Design • Dashboards • Digital Content
+</footer>
+
+</body>
+</html>
