@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HabitHaus| Digital Planner Designer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#faf7f2;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Navbar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+nav h1{
+    font-size:22px;
+    font-weight:600;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-size:14px;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#b38b59;
+}
+
+/* Hero Section */
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 10%;
+}
+
+.hero h2{
+    font-size:42px;
+    font-weight:600;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:16px;
+    color:#666;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 30px;
+    background:#b38b59;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#8f6d43;
+}
+
+/* About Section */
+section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:28px;
+    font-weight:600;
+}
+
+.about p{
+    max-width:700px;
+    margin:auto;
+    text-align:center;
+    color:#555;
+}
+
+/* Services */
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+/* Portfolio */
+.portfolio{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.portfolio img{
+    width:100%;
+    border-radius:15px;
+}
+
+/* Contact */
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin-bottom:20px;
+}
+
+/* Footer */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-size:13px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h1>HabitHaus</h1>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="hero">
+    <div>
+        <h2>Luxury Digital Planner & Canva Designer</h2>
+        <p>I create beautiful, customizable planners and digital products that help parents and entrepreneurs stay organized.</p>
+        <a href="#contact" class="btn">Work With Me</a>
+    </div>
+</div>
+
+<section id="about" class="about">
+    <h2 class="section-title">About Me</h2>
+    <p>
+        I specialize in designing premium digital planners, parenting toolkits, routine charts, and productivity systems.
+        My designs are modern, minimal, and fully customizable to meet your needs.
+    </p>
+</section>
+
+<section id="services">
+    <h2 class="section-title">My Services</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Kids Routine Planners</h3>
+            <p>Custom morning & night routine charts, emotional trackers and parenting toolkits.</p>
+        </div>
+        <div class="card">
+            <h3>Digital Products</h3>
+            <p>Weekly meal planners, productivity bundles, printable planners & Canva templates.</p>
+        </div>
+        <div class="card">
+            <h3>Custom Canva Designs</h3>
+            <p>Instagram posts, branding kits, eBooks and marketing templates.</p>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio">
+    <h2 class="section-title">Portfolio</h2>
+    <div class="portfolio">
+        <img src="https://via.placeholder.com/400x500" alt="Planner Design">
+        <img src="https://via.placeholder.com/400x500" alt="Routine Chart">
+        <img src="https://via.placeholder.com/400x500" alt="Meal Planner">
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2 class="section-title">Let’s Work Together</h2>
+    <p>Interested in custom planners or digital products?</p>
+    <a href="mailto:your@email.com" class="btn">Contact Me</a>
+</section>
+
+<footer>
+    © 2026 YourBrand | All Rights Reserved
+</footer>
+
+</body>
+</html>
